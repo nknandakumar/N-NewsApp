@@ -10,9 +10,7 @@ const CardGrid = ({ category }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const URL = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${
-      import.meta.env.VITE_API_KEY
-    }`;
+    const URL = `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=e6e65d1e059e4abfa350f29b406489e9`;
     axios
       .get(URL)
       .then((res) => {
